@@ -13,6 +13,9 @@ body {
 .carousel__image {
     box-shadow: 1px 1px 15px #909090;
     transition: 1s;
+    &:fullscreen {
+        box-shadow: none;
+    }
 }
 
 .carousel__image-container {

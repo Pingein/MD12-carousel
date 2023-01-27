@@ -186,10 +186,9 @@ class CarouselFinal extends CarouselWithDotsAndPreview {
 let images = ['https://picsum.photos/id/420/1200/800', 'https://picsum.photos/id/26/1200/800', 'https://picsum.photos/id/54/1200/800',
               'https://picsum.photos/id/13/1200/800', 'https://picsum.photos/id/37/1200/800', 'https://picsum.photos/id/69/1200/800',
               'https://picsum.photos/id/240/1200/800', 'https://picsum.photos/id/96/1200/800', 'https://picsum.photos/id/32/1200/800']
-// let images_s = ['https://picsum.photos/id/420/800/450', 'https://picsum.photos/id/26/800/450', 'https://picsum.photos/id/54/800/450',
-//                 'https://picsum.photos/id/13/800/450', 'https://picsum.photos/id/37/800/450', 'https://picsum.photos/id/69/800/450']
+
 let carousel_element = createCustomElement<HTMLDivElement>('div', 'carousel js-carousel')
 document.body.appendChild(carousel_element)
 
-let carousel = new CarouselFinal(carousel_element, images)
+new CarouselFinal(carousel_element, images)
 
