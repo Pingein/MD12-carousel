@@ -7,6 +7,16 @@ body {
 .carousel {
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
+}
+
+.carousel__image {
+    box-shadow: 1px 1px 15px #909090;
+    transition: 1s;
+}
+
+.carousel__image-container {
+    display: flex;
 }
 
 .carousel__btn {
@@ -22,6 +32,10 @@ body {
     font-size: 20px;
     font-weight: 500;
     border: 1px solid black;
+    transition: 0.2s;
+    &:hover {
+        opacity: 0.7;
+    }
 }
 .prev {
     left: 25px;
@@ -32,6 +46,54 @@ body {
     border-right: none;
 }
 
-.carousel__image {
-    transition: 0.5s;
+.carousel__dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.dot {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    transition: 0.15s;
+    box-shadow: 1px 1px 10px #F0F0F0;
+}
+
+.carousel__previews-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.preview {
+    cursor: pointer;
+    border: 1px solid lightgray;
+    transition: 0.2s;
+    box-shadow: 1px 1px 10px #F0F0F0;
+}
+
+.carousel__fullscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #E0E0E0;
+    opacity: 0.5;
+    right: 65px;
+    transition: 0.15s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+    //bottom: 40px;
 }
