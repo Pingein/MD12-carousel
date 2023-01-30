@@ -167,10 +167,13 @@ class CarouselFinal extends CarouselWithDotsAndPreview {
                 document.exitFullscreen()
                 this.is_fullscreen = false
                 this.fullscreen_button.innerHTML = in_fullscreen
+                this.image_element.style.boxShadow = '1px 1px 15px #909090'
+                
             } else {
                 this.image_container.requestFullscreen()
                 this.is_fullscreen = true
                 this.fullscreen_button.innerHTML = out_fullscreen
+                this.image_element.style.boxShadow = 'none'
             }
         })
 
